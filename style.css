@@ -39,6 +39,15 @@
   .logo{
       width: 100px;
   }
+  .circle{
+      width: 500px;
+      height: 500px;
+      position: absolute;
+      margin-bottom: 30px;
+      top: 300px;
+      right: 50px;
+      
+  }
   nav ul li{
       display: inline-block;
       list-style: none;
@@ -110,7 +119,7 @@
   .sub-title{
       font-size: 45px;
       font-weight: 600;
-      color: #33a29e;
+      color: #50b9b5;
       margin-bottom: 20px;
       border-bottom-right-radius: 50px 50px;
       background-color:#1b2051;
@@ -121,6 +130,7 @@
       font-size: 20px;
       /*background-color: #562b1a;*/
       background-color: #33a29e;
+      border-radius: 2%;
       padding: 10px;
       width: 650px;
   }
@@ -128,7 +138,7 @@
       display: flex;
       margin: 20px 0 40px;
       font-size: 40px;
-      font-weight: bold;
+      font-weight:bolder;
   }
   .tab-links{
       margin-right: 50px;
@@ -185,14 +195,12 @@
       grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
       grid-gap: 80px;
       margin-top:50px;
-      /*background-image: url(images/squares3.png);*/
       background-image: url(images/sqaures\ 4.png);
       background-size: 40%;
       border-radius: 50px 50px 50px 50px;
-      background-position: 50%;
-      background-repeat: space;
+      background-position: 500%;
+      background-repeat: repeat;
       opacity: 0.8;
-      /*position: relative;*/
   }
   .services-list div{
       background:#562b1a;
@@ -202,7 +210,7 @@
       font-weight: 300;
       border-right: 10px;
       transition: background 0.5s, transfrom 0.5s;
-  }/*not working idk why*/
+  }
 
   .services-list div i{
      font-size: 50px;
@@ -232,11 +240,12 @@
    grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
    grid-gap: 40px;
    margin-top:50px;
-   background-image: url(images/new\ box.png);
-   background-size: 70%;
+   background-image: url(images/angles.png);
+   background-size: 30%;
    border-radius: 50px 50px 50px 50px;
-   background-position: 40%;
+   background-position: 50%;
    background-repeat: repeat;
+   opacity: 0.9;
    }
    .work{
       border-radius: 10px;
@@ -246,7 +255,7 @@
    .work img{
       width: 100%;
       height: 90%;
-      border: 5px solid #83bfa3;
+      border: 5px solid #2d368b;
       border-radius: 10%;
       display:inline-block;
       transition: transform 0.5s;
@@ -300,18 +309,49 @@
       padding: 14px 50px;
       border-radius:  10px;
       text-decoration: none;
-      color: #33a29e;  
+      color: #562b1a;  
+      font-weight: bold;
   }
   .btn:hover{
       background: #33a29e; 
-      color:white;
+      color: #562b1a;
   }
+  /interests/
+  #portfolio{
+    padding: 20px 0;
+}
+.interest-list{
+display: grid;
+grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
+margin-top:50px;
+}
 
+.interest{
+   position: relative;
+   overflow: hidden;
+   background-image: url(images/new\ box.png);
+      background-size: 80%;
+      border-radius: 20px;
+      background-position: 100%;
+      background-repeat: repeat;
+      
+
+}
+.interest img{
+   width: 100%;
+   height: 90%;
+   display:inline-block;
+}
   /*-----contact------*/
 
   .contact-left{
       flex-basis: 35%;
       color:#000000;
+      background-image: url(images/two\ circles2.png);
+    background-size: 50%;
+    border-radius: 50px 50px 50px 50px;
+    background-position: 80%;
+    background-repeat: no-repeat; 
   }
 
   .contact-right{
@@ -319,7 +359,7 @@
       background-image: url(images/two\ circles2.png);
     background-size: 100%;
     border-radius: 50px 50px 50px 50px;
-    background-position: 10%;
+    background-position: 100%;
     background-repeat: no-repeat; 
   }
   .contact-left p{
@@ -343,7 +383,7 @@
       transition: transform 0.5s;
   }
   .social-icons a:hover{
-      color: #ffffff;
+      color: #562b1a;
       transform: translateY(-5px);
   }
   .btn.btn2{
@@ -376,7 +416,7 @@
     width: 100%;
     text-align: center;
     padding: 25px 0;
-    background: #000000;
+    background: #562b1a;
     font-weight: 300;
     margin-top: 20px;
  }
@@ -393,8 +433,12 @@
         background-size: 100%;
     }
     .header-text{
-        margin-top: 130%;
+        margin-top: 140%;
         font-size: 16px;
+    }
+    .header-text img{
+        left: 100px;
+        top: 10px;
     }
     .header-text h1{
         font-size: 30px;
@@ -433,14 +477,16 @@
      .about-col-2{
         flex-basis: 70%;
         padding-left: 80px;
+        margin-right: 20px;
      }
-    /* .about-col-1{
-        margin-bottom: 30px;*/
     
-        .intro{
-            font-size: 8px;
+    .intro{
+            font-size: 12px;
             padding-left: 10px;
-        }
+            white-space: normal; 
+            content: none;
+    }
+
         .tab-links{
             display: flex;
             margin-right: 10px;
@@ -473,3 +519,4 @@
         }
 
     }
+   
